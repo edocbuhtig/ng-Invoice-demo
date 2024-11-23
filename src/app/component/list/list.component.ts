@@ -12,13 +12,12 @@ import { CommonModule } from '@angular/common';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
-  selector: 'app-list',
-  standalone: true,
-  imports: [MatCardModule, MatTableModule, MatPaginatorModule, MatSortModule,
-    MatButtonModule,CommonModule
-  ],
-  templateUrl: './list.component.html',
-  styleUrl: './list.component.css'
+    selector: 'app-list',
+    imports: [MatCardModule, MatTableModule, MatPaginatorModule, MatSortModule,
+        MatButtonModule, CommonModule
+    ],
+    templateUrl: './list.component.html',
+    styleUrl: './list.component.css'
 })
 export class ListComponent implements OnInit, OnDestroy {
 

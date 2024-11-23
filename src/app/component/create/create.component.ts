@@ -21,15 +21,14 @@ import { Invoice } from '../../model/invoice';
 import { InvoiceProducts } from '../../model/invoiceproducts';
 
 @Component({
-  selector: 'app-create',
-  standalone: true,
-  providers: [provideNativeDateAdapter()],
-  imports: [ReactiveFormsModule, MatCardModule, MatButtonModule,
-    MatInputModule, MatFormFieldModule, MatSelectModule, MatDatepickerModule,
-    MatIconModule, MatListModule, CommonModule
-  ],
-  templateUrl: './create.component.html',
-  styleUrl: './create.component.css'
+    selector: 'app-create',
+    providers: [provideNativeDateAdapter()],
+    imports: [ReactiveFormsModule, MatCardModule, MatButtonModule,
+        MatInputModule, MatFormFieldModule, MatSelectModule, MatDatepickerModule,
+        MatIconModule, MatListModule, CommonModule
+    ],
+    templateUrl: './create.component.html',
+    styleUrl: './create.component.css'
 })
 export class CreateComponent implements OnInit, OnDestroy {
 
